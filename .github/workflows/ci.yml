@@ -28,3 +28,9 @@ jobs:
 
     - name: Run Cypress tests
       run: npm run test
+
+    - name: Echo ENV variable
+      run: echo $ENV
+
+    - name: Echo ENV variable
+      run: echo $ENV
