@@ -24,14 +24,14 @@ jobs:
       run: npm install
 
       env:
-        USERNAME: ${{ secrets.username }}
-        PASSWORD: ${{ secrets.password }}
-        USERINCORRECT: ${{ secrets.userIncorrect }}
-        PASSWORDINCORRECT: ${{ secrets.passwordIncorrect }}
-        USERBLOCKED: ${{ secrets.locked_out_user }}
-        USERPROBLEM: ${{ secrets.userProblem }}
-        USERPERFORMANCE: ${{ secrets.userPerformance }}
-        BASEURL: ${{ secrets.baseUrl }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        userIncorrect: ${{ secrets.USERINCORRECT }} 
+        passwordIncorrect: ${{ secrets.PASSWORDINCORRECT }}
+        userBlocked: ${{ secrets.USERBLOCKED }} 
+        userProblem : ${{ secrets.USERPROBLEM }} 
+        userPerformance : ${{ secrets.USERPERFORMANCE }} 
+        baseUrl: ${{ secrets.BASEURL }}
 
     - name: Run Cypress tests
       run: npm run test
