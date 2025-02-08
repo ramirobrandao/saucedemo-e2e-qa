@@ -7,6 +7,15 @@ on:
   pull_request:
     branches:
       - main
+  env:
+        username: "xxxxxx"
+        password: "xxxxxx"
+        userIncorrect: "xxxxxx"
+        passwordIncorrect: "xxxxxx"
+        userBlocked: "xxxxxx"
+        userProblem : "xxxxxx"
+        userPerformance : "xxxxxx"
+        baseUrl: "xxxxxx"      
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -33,15 +42,6 @@ jobs:
       #   userPerformance : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
       #   baseUrl: ${{ secrets.CYPRESS_BASEURL }}
 
-      env:
-        username: "xxxxxx"
-        password: "xxxxxx"
-        userIncorrect: "xxxxxx"
-        passwordIncorrect: "xxxxxx"
-        userBlocked: "xxxxxx"
-        userProblem : "xxxxxx"
-        userPerformance : "xxxxxx"
-        baseUrl: "xxxxxx"
 
     - name: Run Cypress tests
       run: npm run test
