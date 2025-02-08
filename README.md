@@ -10,7 +10,7 @@ O projeto foi organizado usando estruturas Describe com cenários de sucesso e e
 
 ## 📚 Documentação dos testes
 
-- Acessar o link: [Documentação SauceDemo](https://github.com/ramirobrandao.pdf)  
+- Acessar o link: [Documentação SauceDemo](https://github.com/ramirobrandao/saucedemo-e2e-qa/blob/main/cypress/docs/Documenta%C3%A7%C3%A3o%20SwagLabs.pdf)
 
 ## 💻 Pré-requisitos
 
@@ -50,7 +50,7 @@ Para verificar a instalação do gerenciador de pacoted NPM (deve retornar a ver
 
 `` npx cypress run``
 
-![alt text](image.png)
+![alt text](https://github.com/ramirobrandao/saucedemo-e2e-qa/blob/main/cypress/docs/image.png)
 
 ## 📊 Relatórios 
 
