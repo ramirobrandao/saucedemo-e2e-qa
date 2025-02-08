@@ -1,21 +1,21 @@
 name: Cypress Tests
 
-on:
+on: 
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
-  env:
-        username: "xxxxxx"
-        password: "xxxxxx"
-        userIncorrect: "xxxxxx"
-        passwordIncorrect: "xxxxxx"
-        userBlocked: "xxxxxx"
-        userProblem : "xxxxxx"
-        userPerformance : "xxxxxx"
-        baseUrl: "xxxxxx"      
+env:
+    username: "xxxxxx"
+    password: "xxxxxx"
+    userIncorrect: "xxxxxx"
+    passwordIncorrect: "xxxxxx"
+    userBlocked: "xxxxxx"
+    userProblem : "xxxxxx"
+    userPerformance : "xxxxxx"
+    baseUrl: "xxxxxx"      
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
