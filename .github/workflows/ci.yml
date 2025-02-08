@@ -8,6 +8,8 @@ on:
     branches:
       - main
 
+env:
+      ENV: ${{ secrets.ENV }}
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
