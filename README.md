@@ -26,11 +26,11 @@ O projeto foi organizado usando estruturas Describe com cenários de sucesso e e
 
 Para verificar a instalação do NodeJS e do NPM, abrir o Prompt de Comando e digitar:
 
-Para verificar a instalação do NodeJS (deve retornar a versão algo como v18.20.3):
+Para verificar a instalação do NodeJS (deve retornar a versão algo como v23.7.0):
 
 ``node -v `` 
 
-Para verificar a instalação do gerenciador de pacoted NPM (deve retornar a versão algo como v10.7.0):
+Para verificar a instalação do gerenciador de pacoted NPM (deve retornar a versão algo como v11.1.0):
 
 ``npm -v ``
 - Acessar o link [https://git-scm.com/downloads](https://git-scm.com/downloads), baixar e instalar o Git/GitBash;
