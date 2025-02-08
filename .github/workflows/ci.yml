@@ -8,14 +8,14 @@ on:
     branches:
       - main
 env:
-    username: ${{ secrets.CYPRESS_USERNAME }}
-    password: ${{ secrets.CYPRESS_PASSWORD }}
-    userIncorrect: ${{ secrets.CYPRESS_USERINCORRECT }} 
-    passwordIncorrect: ${{ secrets.CYPRESS_PASSWORDINCORRECT }}
-    userBlocked: ${{ secrets.CYPRESS_USERBLOCKED }} 
-    userProblem : ${{ secrets.CYPRESS_USERPROBLEM }} 
-    userPerformance : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
-    baseUrl: ${{ secrets.CYPRESS_BASEURL }}
+    cypress_USERNAME: ${{ secrets.CYPRESS_USERNAME }}
+    cypress_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
+    cypress_USERINCORRECT: ${{ secrets.CYPRESS_USERINCORRECT }} 
+    cypress_PASSWORDINCORRECT: ${{ secrets.CYPRESS_PASSWORDINCORRECT }}
+    cypress_USERBLOCKED: ${{ secrets.CYPRESS_USERBLOCKED }} 
+    cypress_USERPROBLEM : ${{ secrets.CYPRESS_USERPROBLEM }} 
+    cypress_USERPERFORMANCE : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
+    cypress_BASEURL: ${{ secrets.CYPRESS_BASEURL }}
 
 jobs:
   cypress-run:
