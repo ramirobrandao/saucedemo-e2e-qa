@@ -44,6 +44,6 @@ jobs:
           CYPRESS_userIncorrect: ${{ secrets.CYPRESS_USERINCORRECT }} 
           CYPRESS_passwordIncorrect: ${{ secrets.CYPRESS_PASSWORDINCORRECT }}
           CYPRESS_userBlocked: ${{ secrets.CYPRESS_USERBLOCKED }} 
-          CYPRESS_userProblem : ${{ secrets.CYPRESS_USERPROBLEM }} 
-          CYPRESS_userPerformance : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
+          CYPRESS_userProblem: ${{ secrets.CYPRESS_USERPROBLEM }} 
+          CYPRESS_userPerformance: ${{ secrets.CYPRESS_USERPERFORMANCE }} 
           CYPRESS_baseUrl: ${{ secrets.CYPRESS_BASEURL }}
