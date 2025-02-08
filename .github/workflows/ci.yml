@@ -8,14 +8,15 @@ on:
     branches:
       - main
 env:
-    username: "xxxxxx"
-    password: "xxxxxx"
-    userIncorrect: "xxxxxx"
-    passwordIncorrect: "xxxxxx"
-    userBlocked: "xxxxxx"
-    userProblem : "xxxxxx"
-    userPerformance : "xxxxxx"
-    baseUrl: "xxxxxx"      
+    username: ${{ secrets.CYPRESS_USERNAME }}
+    password: ${{ secrets.CYPRESS_PASSWORD }}
+    userIncorrect: ${{ secrets.CYPRESS_USERINCORRECT }} 
+    passwordIncorrect: ${{ secrets.CYPRESS_PASSWORDINCORRECT }}
+    userBlocked: ${{ secrets.CYPRESS_USERBLOCKED }} 
+    userProblem : ${{ secrets.CYPRESS_USERPROBLEM }} 
+    userPerformance : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
+    baseUrl: ${{ secrets.CYPRESS_BASEURL }}
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
