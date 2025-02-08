@@ -7,10 +7,6 @@ on:
   pull_request:
     branches:
       - main
-
-env:
-  ENV: ${{ secrets.ENV }}
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -27,8 +23,15 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+      env:
+        USERNAME: ${{ secrets.username }}
+        PASSWORD: ${{ secrets.password }}
+        USERINCORRECT: ${{ secrets.userIncorrect }}
+        PASSWORDINCORRECT: ${{ secrets.passwordIncorrect }}
+        USERBLOCKED: ${{ secrets.locked_out_user }}
+        USERPROBLEM: ${{ secrets.userProblem }}
+        USERPERFORMANCE: ${{ secrets.userPerformance }}
+        BASEURL: ${{ secrets.baseUrl }}
+
     - name: Run Cypress tests
       run: npm run test
-
-    - name: Echo ENV variable
-      run: echo $ENV
