@@ -12,6 +12,10 @@
 Cypress.Commands.add('loginSession', (username, password) => {
     cy.session([username, password], () => {
         cy.visit('');
+
+        cy.log(`Username: ${username}`);
+        cy.log(`Password: ${password}`);
+
         cy.get('[data-test="username"]').type(username);
         cy.get('[data-test="password"]').type(password);
         cy.get('#login-button').click();
