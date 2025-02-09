@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
