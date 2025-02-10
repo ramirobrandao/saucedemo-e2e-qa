@@ -27,11 +27,11 @@ jobs:
       run: npm run test
 
       env:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          userIncorrect: ${{ secrets.USERINCORRECT }} 
-          passwordIncorrect: ${{ secrets.PASSWORDINCORRECT }}
-          userBlocked: ${{ secrets.USERBLOCKED }} 
-          userProblem: ${{ secrets.USERPROBLEM }} 
-          userPerformance: ${{ secrets.USERPERFORMANCE }} 
-          baseUrl: ${{ secrets.BASEURL }}
+        username: ${{ secrets.CYPRESS_USERNAME }}
+        password: ${{ secrets.CYPRESS_PASSWORD }}
+        userIncorrect: ${{ secrets.CYPRESS_USERINCORRECT }} 
+        passwordIncorrect: ${{ secrets.CYPRESS_PASSWORDINCORRECT }}
+        userBlocked: ${{ secrets.CYPRESS_USERBLOCKED }} 
+        userProblem: ${{ secrets.CYPRESS_USERPROBLEM }} 
+        userPerformance: ${{ secrets.CYPRESS_USERPERFORMANCE }} 
+        baseUrl: ${{ secrets.CYPRESS_BASEURL }}
