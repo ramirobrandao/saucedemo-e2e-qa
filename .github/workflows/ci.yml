@@ -33,9 +33,6 @@ jobs:
       #   userPerformance : ${{ secrets.CYPRESS_USERPERFORMANCE }} 
       #   baseUrl: ${{ secrets.CYPRESS_BASEURL }}
     
-    - name: Run Cypress tests
-      run: npm run test
-
       env:
           CYPRESS_username: ${{ secrets.CYPRESS_USERNAME }}
           CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
@@ -45,3 +42,8 @@ jobs:
           CYPRESS_userProblem: ${{ secrets.CYPRESS_USERPROBLEM }} 
           CYPRESS_userPerformance: ${{ secrets.CYPRESS_USERPERFORMANCE }} 
           CYPRESS_baseUrl: ${{ secrets.CYPRESS_BASEURL }}
+    
+    - name: Run Cypress tests
+      run: npm run test
+
+      

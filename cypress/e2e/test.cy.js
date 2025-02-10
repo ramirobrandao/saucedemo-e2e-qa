@@ -1,5 +1,5 @@
 //funcionalidade
-describe('Login', () => {
+describe('Teste', () => {
 
     //cenário de sucesso
     it.only('Teste depuração env secrects - Ci Actions', () => {
