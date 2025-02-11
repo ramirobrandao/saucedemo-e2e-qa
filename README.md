@@ -19,6 +19,8 @@ O projeto foi organizado usando estruturas Describe com cenários de sucesso e e
 - Cypress;
 - IDE (Visual Studio Code);
 - Material Icon Theme (Optional Plugin VSCode).
+- Faker Library
+- Mochawesome
 
 ## 🛠️ Instalação
 - Acessar o link [https://nodejs.org/](https://nodejs.org/), baixar e instalar o NodeJS versão 18 ou superior;
