@@ -15,22 +15,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    
-    
-    
-    # - name: Setup Node.js
-    #   uses: actions/setup-node@v3
-    #   with:
-    #     node-version: '23'
-        
-    # - name: Install dependencies
-    #   run: npm install  
-    
-    # - name: Run Cypress tests
-    #   run: npm run test
-
     - name: Cypress run 
-      uses: cypress-io/github-action@v5
+      uses: cypress-io/github-action@v6
 
       env:
         CYPRESS_username: ${{ secrets.USERNAME }}
